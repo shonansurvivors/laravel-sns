@@ -16,12 +16,12 @@
                 @csrf
                 <div class="md-form">
                   <label for="name">ユーザー名</label>
-                  <input class="form-control" type="text" id="name" name="name" required>
+                  <input class="form-control" type="text" id="name" name="name" required value="{{ old('name') }}">
                   <small>英数字3〜16文字(登録後の変更はできません)</small>
                 </div>
                 <div class="md-form">
                   <label for="email">メールアドレス</label>
-                  <input class="form-control" type="text" id="email" name="email" required>
+                  <input class="form-control" type="text" id="email" name="email" required value="{{ old('email') }}" >
                 </div>
                 <div class="md-form">
                   <label for="password">パスワード</label>
@@ -35,7 +35,7 @@
               </form>
 
               <div class="mt-0">
-                <a href="action="{{ route('login') }}" class="card-text">ログインはこちら</a>
+                <a href="{{ route('login') }}" class="card-text">ログインはこちら</a>
               </div>
 
             </div>
