@@ -13,4 +13,9 @@ class ArticleController extends Controller
 
         return view('article.index', ['articles' => $articles]);
     }
+
+    public function create()
+    {
+        return view('article.create');
+    }
 }
