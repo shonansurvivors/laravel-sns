@@ -16,7 +16,7 @@ class ArticlePolicy
      * @param  \App\User  $user
      * @return mixed
      */
-    public function viewAny(User $user)
+    public function viewAny(?User $user)
     {
         return true;
     }
@@ -28,7 +28,7 @@ class ArticlePolicy
      * @param  \App\Article  $article
      * @return mixed
      */
-    public function view(User $user, Article $article)
+    public function view(?User $user, Article $article)
     {
         return true;
     }
