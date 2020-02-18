@@ -11,6 +11,10 @@
           <a href="{{ route('users.show', ['name' => $user->name]) }}" class="text-dark">
             <i class="fas fa-user-circle fa-3x"></i>
           </a>
+          <follow-button
+            class="ml-auto"
+          >
+          </follow-button>
         </div>
         <h2 class="h5 card-title m-0">
           <a href="{{ route('users.show', ['name' => $user->name]) }}" class="text-dark">
