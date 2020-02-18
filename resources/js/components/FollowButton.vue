@@ -15,9 +15,15 @@
 
 <script>
   export default {
+    props: {
+      initialIsFollowed: {
+        type: Boolean,
+        default: false,
+      },
+    },
     data() {
       return {
-        isFollowed: true,
+        isFollowed: this.initialIsFollowed,
       }
     },
     computed: {
