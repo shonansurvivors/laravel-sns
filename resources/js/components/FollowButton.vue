@@ -16,29 +16,29 @@
 <script>
   export default {
     props: {
-      initialIsFollowed: {
+      initialIsFollowedBy: {
         type: Boolean,
         default: false,
       },
     },
     data() {
       return {
-        isFollowed: this.initialIsFollowed,
+        isFollowedBy: this.initialIsFollowedBy,
       }
     },
     computed: {
       buttonColor() {
-        return this.isFollowed
+        return this.isFollowedBy
           ? 'bg-primary text-white'
           : 'bg-white'
       },
       buttonIcon() {
-        return this.isFollowed
+        return this.isFollowedBy
           ? 'fas fa-user-check'
           : 'fas fa-user-plus'
       },
       buttonText() {
-        return this.isFollowed
+        return this.isFollowedBy
           ? 'フォロー中'
           : 'フォロー'
       },
