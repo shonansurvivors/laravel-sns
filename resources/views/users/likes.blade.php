@@ -1,6 +1,6 @@
 @extends('app')
 
-@section('title', $user->name)
+@section('title', $user->name . 'のいいねした記事')
 
 @section('content')
   @include('nav')
