@@ -12,7 +12,7 @@
     },
     "devDependencies": {
         "@johmun/vue-tags-input": "^2.1.0",
-        "axios": "^0.19",
+        "axios": "^0.21",
         "cross-env": "^5.1",
         "laravel-mix": "^4.0.7",
         "lodash": "^4.17.13",
